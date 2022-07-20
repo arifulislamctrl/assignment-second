@@ -1,17 +1,20 @@
 /* -------------------
 -------------common style--------  */
-body{
+body {
     font-family: 'Josefin Sans', sans-serif;
     margin: 0%;
 }
-.container{
+
+.container {
     margin: 5% 8% 5% 8%;
 }
-.container a{
+
+.container a {
     text-decoration: none;
 }
+
 /* -------------------header css------------------------- */
-.banner{
+.banner {
     background-color: rgb(82, 111, 50);
     display: flex;
     border-radius: 30px;
@@ -19,64 +22,77 @@ body{
     width: 100%;
     height: 85vh;
 }
-.slogan{
+
+.slogan {
     width: 45%;
     padding: 10% 0 10% 8%;
 }
-.slogan h1{
+
+.slogan h1 {
     font-size: 3em;
     color: white;
 }
-.slogan P{
+
+.slogan P {
     color: white;
 }
-.slogan .btn{
+
+.slogan .btn {
     margin-top: 2pc;
 }
-.slogan .btn a{
+
+.slogan .btn a {
     background-color: black;
     color: white;
     padding: 14px 25px;
     border-radius: 5px;
 }
-.slogan .btn a .fa-angle-right{
+
+.slogan .btn a .fa-angle-right {
     margin-left: 10px;
 }
-.cover-img{
+
+.cover-img {
     width: 50%;
 }
-.cover-img img{
-    width: 440px;
+
+.cover-img img {
+    width: 447px;
     padding: 11% 12% 0 0;
 }
+
 /*========================header css end  =====================================*/
 
 
 
 /* =============main css start============================ */
-.main-part{
+.main-part {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 15px;
 }
-.blogs-section{
+
+.blogs-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 400px;
     row-gap: 15px;
     column-gap: 15px;
 }
-.blogs{
+
+.blogs {
     width: 280px;
     height: 300px;
     border: 1px solid gainsboro;
     border-radius: 10px;
 }
-.blog-img img{
+
+.blog-img img {
     width: 280px;
 }
-.aside{
-    background-color:rgb(82, 111, 50) ;
+
+.aside {
+    background-color: rgb(82, 111, 50);
     height: 200px;
     display: grid;
     justify-content: center;
@@ -85,72 +101,99 @@ body{
     padding-top: 15px;
     padding-bottom: 15px;
 }
-.aside a{
+
+.aside a {
     color: rgb(0, 0, 0);
     background-color: white;
     padding: 10px 30px;
     text-align: center;
     border-radius: 10px;
 }
-.aside #blog-btn{
+
+.aside #blog-btn {
     background-color: black;
     color: white;
 }
-.blog-info{
+
+.blog-info {
     padding: 15px;
 }
-.blog-info a{
+
+.blog-info a {
     color: black;
     border: 1px solid black;
     padding: 5px 10px;
     border-radius: 5px;
 }
-.blog-info p{
+
+.blog-info p {
     font-weight: bold;
 }
-.blog-details{
+
+.blog-details {
     display: flex;
     align-items: center;
     font-size: 15px;
 }
-.blog-details span{
+
+.blog-details span {
     margin-left: 10px;
     color: gray;
-    
+
 }
-.blog-details .chat-icon{
+
+.blog-details .chat-icon {
     margin-left: 10px;
+}
+
+.view-all {
+    text-align: center;
+    padding-top: 5em;
+    display: none;
+}
+
+.view-all a {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 14px 25px;
+    border-radius: 5px;
 }
 
 
 
 /* =======================footer css =========================*/
-footer{
-    background-color:rgb(82, 111, 50) ;
+footer {
+    background-color: rgb(82, 111, 50);
 }
-.goal h2{
+
+.goal h2 {
     font-size: 2em;
     color: white;
     text-align: center;
     padding-top: 100px;
 }
-.company-info ul{
+
+.company-info ul {
     display: flex;
     justify-content: center;
     padding-top: 25px;
 }
-.company-info ul li{
+
+.company-info ul li {
     list-style: none;
     margin-right: 30px;
 }
+
 .company-info ul li a {
     color: white;
 }
-.social{
+
+.social {
     text-align: center;
     padding: 20px;
 }
-.social a{
+
+.social a {
     color: white;
     margin-right: 20px;
 }
@@ -158,11 +201,127 @@ footer{
 
 /* ------------------footer end---------------------------- */
 
+/* =========================
+media query================ */
 
-/* ===================================
-========================responsive css====================== */
-@media screen and (max-width:576px) {
 
+/* ===================================responsive css    mobile device====================== */
+@media only screen and (max-width:576px) {
+    .banner {
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+    .slogan .btn a {
+        padding: 15px 15px;
+    }
+
+    .cover-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .main-part {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+    .aside {
+        background-color: white;
+    }
+
+    .aside a {
+        border: 1px solid gray;
+    }
+
+    .blogs-section {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+    .blogs {
+        margin-left: 25px;
+    }
+
+    .company-info ul {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+
+    .company-info ul li {
+        padding-bottom: 5px;
+    }
 }
 
+/* ========================
+=========mobile device done============== */
 
+
+/*=================== tablet device =====================*/
+
+@media only screen and (min-width:577px) and (max-width:768px) {
+    .banner {
+        width: 100%;
+        height: 100%;
+    }
+
+    .slogan p {
+        text-emphasis: none;
+    }
+
+    .cover-img img {
+        width: 90%;
+        height: 91%;
+    }
+
+    .main-part {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+
+
+    .aside {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+    }
+
+    .aside a {
+        border: 1px solid gray;
+        margin-right: 10px;
+    }
+
+    .blogs-section {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+    .blogs {
+        margin-left: 25px;
+    }
+
+    #hidden {
+        display: none;
+    }
+
+    .view-all {
+        display: block;
+
+    }
+
+    .company-info ul {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .company-info ul li {
+        margin-right: 50px;
+        padding-bottom: 15px;
+    }
+}
+/* ---------------tablet end ----------------------*/
