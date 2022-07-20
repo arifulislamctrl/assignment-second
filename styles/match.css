@@ -20,7 +20,7 @@ body {
     border-radius: 30px;
     background-size: cover;
     width: 100%;
-    height: 85vh;
+    height: auto;
 }
 
 .slogan {
@@ -46,6 +46,17 @@ body {
     color: white;
     padding: 14px 25px;
     border-radius: 5px;
+    box-shadow: inset 0 0 0 0 #fff;
+    transition: ease-in-out .5s;
+}
+
+.slogan .btn a:hover {
+    box-shadow: inset 160px 0 0 0 #fff;
+    color: rgb(0, 0, 0);
+}
+
+.slogan .btn a .fa-angle-right:hover {
+    color: black;
 }
 
 .slogan .btn a .fa-angle-right {
@@ -57,7 +68,7 @@ body {
 }
 
 .cover-img img {
-    width: 440px;
+    width: 87%;
     padding: 11% 12% 0 0;
 }
 
@@ -75,25 +86,23 @@ body {
 .blogs-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 400px;
+    width: 75vh;
     row-gap: 15px;
     column-gap: 15px;
 }
 
 .blogs {
-    width: 280px;
-    height: 240px;
+    width: 17.8em;
+    height: auto;
     border: 1px solid gainsboro;
     border-radius: 10px;
 }
-.blog-img{
+
+.blog-img {
     display: flex;
     justify-content: center;
     justify-content: space-around;
     align-items: center;
-}
-.blog-img img {
-    width: 100px;
 }
 
 .aside {
@@ -119,16 +128,20 @@ body {
     background-color: black;
     color: white;
 }
-.schedule{
+
+.schedule {
     text-align: center;
     padding-top: 30px;
 }
+
 .blog-info {
     padding: 15px;
 }
-.blog-info h2{
+
+.blog-info h2 {
     font-size: 20px;
 }
+
 .blog-info p {
     text-align: center;
     color: gray;
@@ -174,3 +187,124 @@ footer {
 
 
 /* ------------------footer end---------------------------- */
+
+/* =========================
+media query================ */
+
+
+/* ===================================responsive css    mobile device====================== */
+@media only screen and (max-width:576px) {
+    .banner {
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+
+    .slogan .btn a {
+        padding: 15px 15px;
+    }
+
+    .cover-img img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .main-part {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+    .aside {
+        background-color: white;
+    }
+
+    .aside a {
+        border: 1px solid gray;
+    }
+
+    .blogs-section {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        height: auto;
+    }
+
+    .blogs {
+        margin-left: 25px;
+    }
+
+    .company-info ul {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+
+    .company-info ul li {
+        padding-bottom: 5px;
+    }
+}
+
+/* ========================
+    =========mobile device done============== */
+
+
+    /* =============tab device============== */
+
+@media only screen and (min-width:577px) and (max-width:968px) {
+    .banner {
+        width: 100%;
+        height: 100%;
+    }
+
+    .slogan p {
+        width: 300px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .cover-img img {
+        width: 90%;
+        height: 91%;
+    }
+
+    .main-part {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+
+
+    .aside {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+    }
+
+    .aside a {
+        border: 1px solid gray;
+        margin-right: 10px;
+    }
+
+    .blogs-section {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+    .blogs {
+        margin-left: 25px;
+    }
+
+    .company-info ul {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .company-info ul li {
+        margin-right: 50px;
+        padding-bottom: 15px;
+    }
+}
+
+/* ---------------tablet end ----------------------*/
