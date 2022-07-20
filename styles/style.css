@@ -1,0 +1,168 @@
+/* -------------------
+-------------common style--------  */
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0%;
+}
+.container{
+    margin: 5% 8% 5% 8%;
+}
+.container a{
+    text-decoration: none;
+}
+/* -------------------header css------------------------- */
+.banner{
+    background-color: rgb(82, 111, 50);
+    display: flex;
+    border-radius: 30px;
+    background-size: cover;
+    width: 100%;
+    height: 85vh;
+}
+.slogan{
+    width: 45%;
+    padding: 10% 0 10% 8%;
+}
+.slogan h1{
+    font-size: 3em;
+    color: white;
+}
+.slogan P{
+    color: white;
+}
+.slogan .btn{
+    margin-top: 2pc;
+}
+.slogan .btn a{
+    background-color: black;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 5px;
+}
+.slogan .btn a .fa-angle-right{
+    margin-left: 10px;
+}
+.cover-img{
+    width: 50%;
+}
+.cover-img img{
+    width: 440px;
+    padding: 11% 12% 0 0;
+}
+/*========================header css end  =====================================*/
+
+
+
+/* =============main css start============================ */
+.main-part{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 15px;
+}
+.blogs-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 400px;
+    row-gap: 15px;
+    column-gap: 15px;
+}
+.blogs{
+    width: 280px;
+    height: 300px;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+}
+.blog-img img{
+    width: 280px;
+}
+.aside{
+    background-color:rgb(82, 111, 50) ;
+    height: 200px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.aside a{
+    color: rgb(0, 0, 0);
+    background-color: white;
+    padding: 10px 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+.aside #blog-btn{
+    background-color: black;
+    color: white;
+}
+.blog-info{
+    padding: 15px;
+}
+.blog-info a{
+    color: black;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.blog-info p{
+    font-weight: bold;
+}
+.blog-details{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+.blog-details span{
+    margin-left: 10px;
+    color: gray;
+    
+}
+.blog-details .chat-icon{
+    margin-left: 10px;
+}
+
+
+
+/* =======================footer css =========================*/
+footer{
+    background-color:rgb(82, 111, 50) ;
+}
+.goal h2{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+.company-info ul{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+.company-info ul li{
+    list-style: none;
+    margin-right: 30px;
+}
+.company-info ul li a {
+    color: white;
+}
+.social{
+    text-align: center;
+    padding: 20px;
+}
+.social a{
+    color: white;
+    margin-right: 20px;
+}
+
+
+/* ------------------footer end---------------------------- */
+
+
+/* ===================================
+========================responsive css====================== */
+@media screen and (max-width:576px) {
+
+}
+
+
